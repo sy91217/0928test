@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chrast="UTF-8>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabs</title>
+</head>
+<body>
+    <div>
+        <span onclick="changeToLatest();">最新</span>
+        <span onclick="changeToPopular();">熱門</span>
+    </div>
+    <hr/>
+    <div id="latest">聽說天氣之子很雷</div>
+    <div id="popular" style="display:none">魔戒超級經典</div>
+    <script>
+        function $(id){ // 很多人嫌 get 太長, 改用 $
+            return document.getElementById(id);
+        }
+        function changeToLatest(){
+            //取得有興趣的標籤
+            let latest=$("latest");
+            let popular=$("popular");
+            // 對標籤做適當的操作
+            latest.style.display="none";
+            popular.style.display="block";
+        }
+        function changeToPopular(){
+            //取得有興趣的標籤
+            let latest=$("latest");
+            let popular=$("popular");
+            // 對標籤做適當的操作
+            latest.style.display="none";
+            popular.style.display="block";
+        }
+    </script>
+</body>
+</html>

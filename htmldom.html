@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chrast="UTF-8>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML DOM</title>
+</head>
+<body>
+    <h3>Hello HTML DOM</h3>
+    <div id="content">這是畫面和程式結合的關鍵</div>
+    <button onclick="change();">Click</button>
+    <script>
+        // HTML DOM: 程式控制網頁畫面的關鍵
+        // HTML DOM: 內建的 window 物件
+        function change(){
+            // 取得目標的標籤
+            // document.getElementById("標籤的ID")
+            let element=document.getElementById("content");
+            // console.log(element);
+            // 對標籤做修改  
+            // 取得/修改標籤的屬性
+            element.innerHTML="總算可以操作畫面了";
+            element.id="test";
+            element.classname="test-calss";
+            // 修改標籤的 CSS 樣式
+            // console.log(element.style)
+            element.style.color="red";
+            element.style.fontSize="30px"
+            element.style.display="none";
+        }
+    </script>
+</body>
+</html>

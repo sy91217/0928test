@@ -11,6 +11,109 @@
     // 資料: 數字、字串、布林值 (true/false)、空值 (null/undefined))
     // 變數: 存放資料的名稱
     // 運算符號
+    // 流程控制: 判斷式、迴圈
+    // 函式: 基本結構、參數、回傳值
+    /*
+    function calc(max){
+        let result=0;
+        let n=1;
+        while(n<=max){
+            result=result+n;
+            n++;       
+        }
+        console.log(result);
+    }
+    calc(50);
+    calc(100);
+    calc(6);
+    */
+    /*
+        建立函式
+            function 函式名稱(參數名稱列表){
+                函式內部的程式區塊
+            }
+        呼叫函式
+            函式名稱(參數資料);
+    */
+    /*
+    function test(msg){
+        console.log(msg);
+    }
+    test("Hello");
+    test("World");
+    test(true)
+    */
+    /*
+    function add(x1,x2){
+        // console.log(x1+x2);
+        return x1+x2; // return 回傳值;
+    }
+    let result=add(6,4)*20
+    console.log(result);
+    */
+    // let number=prompt("輸入一個正整數","");
+    /*
+        while(布林值){
+            如果布林值是 true, 執行這個區塊的程式碼
+        }
+    */
+    /*
+    let n=0;
+    while(n<100){
+        console.log(n);
+        n++;
+    }
+    */
+    // 1+2+3+.....+50
+    /*
+    let result=(1+50)*50/2;
+    console.log(result); 
+    */
+    /*
+    let result=0;
+    let n=1;
+    while(n<=3){
+        console.log(n, result)
+        result=result+n;
+        n++;
+    }
+    console.log(result);
+    */
+    //讓使用者輸入一個數字, 開根號取整數
+    // 輸入 16 得到 4, 輸入 10 得到【沒有答案】
+    /*
+    let number=prompt("輸入一個正整數","");
+    let n=1;
+    while(n<number){ // 測試 1, 2, 3, 4, ..., number-1
+        if(n*n==number){
+            console.log("答案", n);
+            break; // 在迴圈中使用break; 命令, 強迫結束迴圈
+        }else if(n==number-1){ // 測試到最後一圈, 都沒有答案, 才說沒有答案
+            console.log("沒有答案");
+        }
+        n++;
+    }
+    */
+    // if 判斷式
+    /*
+       if(布林值){
+           如果布林值是 true, 執行這個區塊的程式碼
+       }else if(布林值){
+           如果上方的布林值是 true, 執行這個區塊的程式碼
+       }else{
+           如果布林值是 flase, 執行這個區塊的程式碼
+       }
+    */
+    /*
+    let money=prompt("要多少錢?","");
+    if(money<100){
+        console.log("Too Few");
+    }else if(money<=100000){
+        console.log("OK");
+    }else{
+        console.log("Too Much");
+    }
+    */
     // 算術運算: +, -, *, /
     // 指定運算: =,*=, -=, /=
     /*
@@ -32,8 +135,13 @@
     // console.log(資料);
     // 讓使用者輸入資料
     // prompt(字串 字串);
-    prompt("輸入第一個數字","");
-    prompt("輸入第二個數字","");
+    /*
+    let n1=prompt("輸入第一個數字","");
+    let n2=prompt("輸入第二個數字","");
+    let result=n1*n2;
+    console.log(result);
+    */
+
     </script>
 </body>
 </html>
